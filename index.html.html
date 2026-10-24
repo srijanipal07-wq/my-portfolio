@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  
+<header>
+  <nav class="navbar">
+    <a href="#home" class="logo">MyPortfolio<span>.</span></a>
+
+    <button class="menu-btn" id="menu-btn"
+      aria-label="Toggle navigation" aria-expanded="false">
+      ☰
+    </button>
+
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#roadmap">Roadmap</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+  <main>
+    <section id="home">
+      <p>HELLO, I'M</p>
+      <h1>Srijani Pal</h1>
+      <img src="images/myphoto.jpg.jpeg"
+     alt="Srijani Pal"
+     class="profile-pic">
+     <h2>
+  I am a <span id="dynamic-text"></span>
+</h2>
+      <p>
+        I am learning web development and building
+        creative projects using HTML, CSS and JavaScript.
+      </p>
+      <a href="#about">Discover More</a>
+    </section>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I am a Computer Science and Engineering student.</p>
+    </section>
+ 
+<!-- Skills Section -->
+<section id="skills" class="content-section">
+  <p class="tag">WHAT I KNOW</p>
+  <h2>My Skills</h2>
+
+  <div class="skills-container">
+    <div class="skill">HTML</div>
+    <div class="skill">CSS</div>
+    <div class="skill">JavaScript</div>
+    <div class="skill">C Programming</div>
+    <div class="skill">Python</div>
+    <div class="skill">Problem Solving</div>
+  </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="content-section">
+  <p class="tag">MY WORK</p>
+  <h2>My Projects</h2>
+
+  <div class="projects-container">
+    <div class="project-card">
+      <h3>Personal Portfolio</h3>
+      <p>A personal website built using HTML and CSS.</p>
+      <span>HTML • CSS • JavaScript</span>
+    </div>
+
+    <div class="project-card">
+      <h3>Word Frequency Analyzer</h3>
+      <p>A Python program that counts words in a text.</p>
+      <span>Python • Dictionaries</span>
+    </div>
+
+    <div class="project-card">
+      <h3>Future Project</h3>
+      <p>My next project will focus on solving a real problem.</p>
+      <span>Learning in Progress</span>
+    </div>
+  </div>
+</section>
+
+<!-- Learning Roadmap Section -->
+<section id="roadmap" class="content-section">
+  <p class="tag">MY LEARNING JOURNEY</p>
+  <h2>Learning Roadmap</h2>
+  <p class="section-intro">
+    My plan to grow as a software developer.
+  </p>
+
+  <div class="roadmap-container">
+    <div class="roadmap-item">
+      <div class="roadmap-number">01</div>
+      <div>
+        <h3>Programming Fundamentals</h3>
+        <p>Learn C, Python and problem-solving basics.</p>
+        <span>Foundation</span>
+      </div>
+    </div>
+
+    <div class="roadmap-item">
+      <div class="roadmap-number">02</div>
+      <div>
+        <h3>Web Development</h3>
+        <p>Practice HTML, CSS, JavaScript and responsive design.</p>
+        <span>In Progress</span>
+      </div>
+    </div>
+
+    <div class="roadmap-item">
+      <div class="roadmap-number">03</div>
+      <div>
+        <h3>Tools and Projects</h3>
+        <p>Learn Git, GitHub and build practical projects.</p>
+        <span>Upcoming</span>
+      </div>
+    </div>
+
+    <div class="roadmap-item">
+      <div class="roadmap-number">04</div>
+      <div>
+        <h3>Career Preparation</h3>
+        <p>Practice DSA, prepare a resume and apply for internships.</p>
+        <span>Future Goal</span>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+</main>
+
+  <footer>
+    <p>My Portfolio | 2026</p>
+  </footer>
+</body>
+</html>
