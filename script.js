@@ -1,58 +1,50 @@
-
+// Mobile navigation
 const menuBtn = document.getElementById("menu-btn");
 const navLinks = document.getElementById("nav-links");
 
-// Mobile navigation
-menuBtn.addEventListener("click", () => {
-  const isOpen = navLinks.classList.toggle("open");
-  menuBtn.setAttribute("aria-expanded", isOpen);
-});
-
-// Close menu after selecting a section
-navLinks.querySelectorAll("a").forEach(link => {
-  link.addEventListener("click", () => {
-    navLinks.classList.remove("open");
-    menuBtn.setAttribute("aria-expanded", "false");
+if (menuBtn && navLinks) {
+  menuBtn.addEventListener("click", () => {
+    const isOpen = navLinks.classList.toggle("open");
+    menuBtn.setAttribute("aria-expanded", String(isOpen));
+    menuBtn.textContent = isOpen ? "×" : "☰";
   });
-});
-const words = [
-    "CSE Student",
-    "Web Developer",
-    "Programmer",
-    "Tech Enthusiast"
-];
 
+  navLinks.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      navLinks.classList.remove("open");
+      menuBtn.setAttribute("aria-expanded", "false");
+      menuBtn.textContent = "☰";
+    });
+  });
+}
+
+// Animated introduction text
+const words = ["CSE Student", "Python Programmer", "Aspiring Web Developer", "Tech Enthusiast"];
+const dynamicText = document.getElementById("dynamic-text");
 let wordIndex = 0;
 let charIndex = 0;
 let deleting = false;
 
 function typeEffect() {
-    const element = document.getElementById("dynamic-text");
+  if (!dynamicText) return;
 
-    if (!element) return;
+  const currentWord = words[wordIndex];
+  dynamicText.textContent = currentWord.substring(0, charIndex);
 
-    const word = words[wordIndex];
-
-    if (deleting) {
-        charIndex--;
-    } else {
-        charIndex++;
-    }
-
-    element.textContent = word.substring(0, charIndex);
-
-    let speed = deleting ? 60 : 120;
-
-    if (!deleting && charIndex === word.length) {
-        deleting = true;
-        speed = 1000;
-    } else if (deleting && charIndex === 0) {
-        deleting = false;
-        wordIndex = (wordIndex + 1) % words.length;
-        speed = 300;
-    }
-
-    setTimeout(typeEffect, speed);
+  if (!deleting && charIndex < currentWord.length) {
+    charIndex++;
+    setTimeout(typeEffect, 105);
+  } else if (!deleting && charIndex === currentWord.length) {
+    deleting = true;
+    setTimeout(typeEffect, 1150);
+  } else if (deleting && charIndex > 0) {
+    charIndex--;
+    setTimeout(typeEffect, 55);
+  } else {
+    deleting = false;
+    wordIndex = (wordIndex + 1) % words.length;
+    setTimeout(typeEffect, 350);
+  }
 }
 
-typeEffect();
+if (dynamicText) typeEffect();

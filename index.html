@@ -1,150 +1,245 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
+  <meta name="description" content="Srijani Pal - Computer Science and Engineering student, Python learner and aspiring web developer.">
+  <title>Srijani Pal | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
 <body>
-  
-<header>
-  <nav class="navbar">
-    <a href="#home" class="logo">MyPortfolio<span>.</span></a>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
 
-    <button class="menu-btn" id="menu-btn"
-      aria-label="Toggle navigation" aria-expanded="false">
-      ☰
-    </button>
-
-    <ul class="nav-links" id="nav-links">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#roadmap">Roadmap</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-</header>
-
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a href="#home" class="logo">Srijani<span>.</span></a>
+      <button class="menu-btn" id="menu-btn" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#progress">Progress</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#roadmap">Roadmap</a></li>
+        <li><a href="#contact" class="nav-contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
   <main>
-    <section id="home">
-      <p>HELLO, I'M</p>
-      <h1>Srijani Pal</h1>
-      <img src="images/myphoto.jpg.jpeg"
-     alt="Srijani Pal"
-     class="profile-pic">
-     <h2>
-  I am a <span id="dynamic-text"></span>
-</h2>
-      <p>
-        I am learning web development and building
-        creative projects using HTML, CSS and JavaScript.
-      </p>
-      <a href="#about">Discover More</a>
+    <section class="hero container" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> COMPUTER SCIENCE & ENGINEERING STUDENT</p>
+        <h1>Hi, I'm <span class="gradient-text">Srijani Pal.</span></h1>
+        <h2>I’m a <span id="dynamic-text">Python Programmer</span><span class="typing-cursor">|</span></h2>
+        <p class="hero-description">I enjoy learning how technology works and turning ideas into practical projects. I have explored Python programming and am now focusing on building my web development skills.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">Explore my work <span>↗</span></a>
+          <a class="button button-secondary" href="#contact">Get in touch</a>
+        </div>
+        <div class="hero-note"><span class="note-line"></span> Learning, building, and improving — one project at a time.</div>
+      </div>
+      <div class="hero-visual">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="profile-frame">
+          <img src="images/myphoto.jpg.jpeg" alt="Portrait of Srijani Pal" class="profile-pic">
+        </div>
+        <div class="floating-chip chip-top"><span class="chip-icon">✦</span> Curious mind</div>
+        <div class="floating-chip chip-bottom"><span class="chip-icon">⌘</span> Code & create</div>
+        <div class="visual-glow"></div>
+      </div>
     </section>
 
-    <section id="about">
-      <h2>About Me</h2>
-      <p>I am a Computer Science and Engineering student.</p>
+    <section class="section container" id="about">
+      <div class="section-heading">
+        <p class="eyebrow">A LITTLE INTRODUCTION</p>
+        <h2>About <span class="gradient-text">Me</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="glass-card about-main">
+          <p class="large-copy">I’m a Computer Science and Engineering student with an interest in programming and web technologies.</p>
+          <p>I have completed my initial learning journey with Python and built beginner-friendly mini projects to practise programming concepts. Now, I’m moving forward with HTML, CSS, and JavaScript to create responsive and engaging websites.</p>
+          <p>My goal is to keep strengthening my fundamentals, build useful projects, and grow into a confident software developer.</p>
+        </div>
+        <div class="about-side">
+          <div class="glass-card mini-info"><span class="info-icon">⌁</span><div><strong>Current focus</strong><p>Web Development</p></div></div>
+          <div class="glass-card mini-info"><span class="info-icon">⌘</span><div><strong>Previously explored</strong><p>Python Programming</p></div></div>
+          <div class="glass-card mini-info"><span class="info-icon">◎</span><div><strong>Mindset</strong><p>Learn • Build • Improve</p></div></div>
+        </div>
+      </div>
     </section>
- 
-<!-- Skills Section -->
-<section id="skills" class="content-section">
-  <p class="tag">WHAT I KNOW</p>
-  <h2>My Skills</h2>
 
-  <div class="skills-container">
-    <div class="skill">HTML</div>
-    <div class="skill">CSS</div>
-    <div class="skill">JavaScript</div>
-    <div class="skill">C Programming</div>
-    <div class="skill">Python</div>
-    <div class="skill">Problem Solving</div>
-  </div>
-</section>
-
-<!-- Projects Section -->
-<section id="projects" class="content-section">
-  <p class="tag">MY WORK</p>
-  <h2>My Projects</h2>
-
-  <div class="projects-container">
-    <div class="project-card">
-      <h3>Personal Portfolio</h3>
-      <p>A personal website built using HTML and CSS.</p>
-      <span>HTML • CSS • JavaScript</span>
-    </div>
-
-    <div class="project-card">
-      <h3>Word Frequency Analyzer</h3>
-      <p>A Python program that counts words in a text.</p>
-      <span>Python • Dictionaries</span>
-    </div>
-
-    <div class="project-card">
-      <h3>Future Project</h3>
-      <p>My next project will focus on solving a real problem.</p>
-      <span>Learning in Progress</span>
-    </div>
-  </div>
-</section>
-
-<!-- Learning Roadmap Section -->
-<section id="roadmap" class="content-section">
-  <p class="tag">MY LEARNING JOURNEY</p>
-  <h2>Learning Roadmap</h2>
-  <p class="section-intro">
-    My plan to grow as a software developer.
-  </p>
-
-  <div class="roadmap-container">
-    <div class="roadmap-item">
-      <div class="roadmap-number">01</div>
-      <div>
-        <h3>Programming Fundamentals</h3>
-        <p>Learn C, Python and problem-solving basics.</p>
-        <span>Foundation</span>
+    <section class="section container" id="progress">
+      <div class="section-heading">
+        <p class="eyebrow">THE JOURNEY SO FAR</p>
+        <h2>My <span class="gradient-text">Progress</span></h2>
+        <p class="section-subtitle">A snapshot of the areas I have explored and the skills I am developing.</p>
       </div>
-    </div>
-
-    <div class="roadmap-item">
-      <div class="roadmap-number">02</div>
-      <div>
-        <h3>Web Development</h3>
-        <p>Practice HTML, CSS, JavaScript and responsive design.</p>
-        <span>In Progress</span>
+      <div class="progress-grid">
+        <article class="glass-card progress-card">
+          <div class="card-topline"><span class="progress-icon purple">Py</span><span class="state state-done">Completed learning phase</span></div>
+          <h3>Python Programming</h3>
+          <p>Practised programming fundamentals, conditions, loops, functions, collections, and problem-solving.</p>
+          <div class="progress-track"><span style="width:100%"></span></div>
+          <div class="progress-label"><span>Learning phase</span><strong>Completed</strong></div>
+        </article>
+        <article class="glass-card progress-card">
+          <div class="card-topline"><span class="progress-icon cyan">{ }</span><span class="state state-done">Practice projects</span></div>
+          <h3>Python Mini Projects</h3>
+          <p>Applied Python concepts by creating small management and utility-based projects.</p>
+          <div class="progress-track"><span style="width:100%"></span></div>
+          <div class="progress-label"><span>Practice phase</span><strong>Completed</strong></div>
+        </article>
+        <article class="glass-card progress-card">
+          <div class="card-topline"><span class="progress-icon pink">〈/〉</span><span class="state state-current">Current focus</span></div>
+          <h3>Web Development</h3>
+          <p>Learning HTML, CSS, JavaScript, page structure, styling, and responsive design.</p>
+          <div class="progress-track"><span class="current-progress"></span></div>
+          <div class="progress-label"><span>Learning phase</span><strong>In progress</strong></div>
+        </article>
       </div>
-    </div>
+      <p class="small-note">Progress labels describe my learning stages, not a percentage-based skill assessment.</p>
+    </section>
 
-    <div class="roadmap-item">
-      <div class="roadmap-number">03</div>
-      <div>
-        <h3>Tools and Projects</h3>
-        <p>Learn Git, GitHub and build practical projects.</p>
-        <span>Upcoming</span>
+    <section class="section container" id="skills">
+      <div class="section-heading">
+        <p class="eyebrow">TOOLS IN MY TOOLKIT</p>
+        <h2>Skills & <span class="gradient-text">Technologies</span></h2>
       </div>
-    </div>
-
-    <div class="roadmap-item">
-      <div class="roadmap-number">04</div>
-      <div>
-        <h3>Career Preparation</h3>
-        <p>Practice DSA, prepare a resume and apply for internships.</p>
-        <span>Future Goal</span>
+      <div class="skills-layout">
+        <div class="glass-card skill-group">
+          <h3><span class="group-mark purple-mark"></span> Programming</h3>
+          <div class="skill-pills"><span>Python</span><span>C Programming</span><span>Problem Solving</span></div>
+        </div>
+        <div class="glass-card skill-group">
+          <h3><span class="group-mark cyan-mark"></span> Web Development</h3>
+          <div class="skill-pills"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Responsive Design</span></div>
+          <p class="small-note">Currently learning and practising.</p>
+        </div>
+        <div class="glass-card skill-group">
+          <h3><span class="group-mark pink-mark"></span> Tools & Workflow</h3>
+          <div class="skill-pills"><span>VS Code</span><span>GitHub</span></div>
+          <p class="small-note">Used in my learning and project workflow.</p>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
- 
-</main>
+    </section>
 
-  <footer>
-    <p>My Portfolio | 2026</p>
+    <section class="section container" id="projects">
+      <div class="section-heading">
+        <p class="eyebrow">THINGS I HAVE BUILT</p>
+        <h2>Featured <span class="gradient-text">Projects</span></h2>
+        <p class="section-subtitle">A selection of beginner projects created to practise programming concepts.</p>
+      </div>
+      <div class="projects-grid">
+        <article class="glass-card project-card">
+          <div class="project-symbol symbol-purple">01</div>
+          <div class="project-meta">PYTHON • CONSOLE APPLICATION</div>
+          <h3>Banking Management System</h3>
+          <p>A beginner Python project for practising basic banking operations and menu-driven program flow.</p>
+          <div class="project-tags"><span>Python</span><span>Loops</span><span>Conditions</span></div>
+        </article>
+        <article class="glass-card project-card">
+          <div class="project-symbol symbol-cyan">02</div>
+          <div class="project-meta">PYTHON • RECORD MANAGEMENT</div>
+          <h3>Library Management System</h3>
+          <p>A small project focused on organising library records and practising core Python logic.</p>
+          <div class="project-tags"><span>Python</span><span>Lists</span><span>Functions</span></div>
+        </article>
+        <article class="glass-card project-card">
+          <div class="project-symbol symbol-pink">03</div>
+          <div class="project-meta">PYTHON • STUDENT DATA</div>
+          <h3>Student Grade Management</h3>
+          <p>A practice application for handling student information and grade-related calculations.</p>
+          <div class="project-tags"><span>Python</span><span>Conditions</span><span>Data</span></div>
+        </article>
+        <article class="glass-card project-card">
+          <div class="project-symbol symbol-gold">04</div>
+          <div class="project-meta">PYTHON • CALCULATION</div>
+          <h3>Payroll Calculation System</h3>
+          <p>A beginner project to practise employee records and simple payroll calculations.</p>
+          <div class="project-tags"><span>Python</span><span>Loops</span><span>Arithmetic</span></div>
+        </article>
+        <article class="glass-card project-card">
+          <div class="project-symbol symbol-green">05</div>
+          <div class="project-meta">PYTHON • TEXT PROCESSING</div>
+          <h3>Word Frequency Analyzer</h3>
+          <p>A text-processing program that counts word occurrences using a Python dictionary.</p>
+          <div class="project-tags"><span>Python</span><span>Strings</span><span>Dictionary</span></div>
+        </article>
+        <article class="glass-card project-card project-next">
+          <div class="project-symbol symbol-outline">＋</div>
+          <div class="project-meta">CURRENTLY LEARNING</div>
+          <h3>Next: Web Projects</h3>
+          <p>Building my next set of projects while practising HTML, CSS, and JavaScript.</p>
+          <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section container" id="roadmap">
+      <div class="section-heading">
+        <p class="eyebrow">WHERE I'M HEADING</p>
+        <h2>Learning <span class="gradient-text">Roadmap</span></h2>
+        <p class="section-subtitle">My step-by-step plan for growing as a software developer.</p>
+      </div>
+      <div class="roadmap">
+        <article class="roadmap-item completed">
+          <div class="roadmap-marker">✓</div><div class="roadmap-content glass-card">
+            <div class="roadmap-head"><span class="roadmap-step">01 / COMPLETED</span><span class="state state-done">Done</span></div>
+            <h3>Python Programming</h3><p>Build a foundation in Python syntax, variables, conditions, loops, functions, lists, dictionaries, and problem-solving.</p>
+          </div>
+        </article>
+        <article class="roadmap-item completed">
+          <div class="roadmap-marker">✓</div><div class="roadmap-content glass-card">
+            <div class="roadmap-head"><span class="roadmap-step">02 / COMPLETED</span><span class="state state-done">Done</span></div>
+            <h3>Python Mini Projects</h3><p>Apply the concepts through small projects such as banking, library, student grade, payroll, and word frequency programs.</p>
+          </div>
+        </article>
+        <article class="roadmap-item active">
+          <div class="roadmap-marker">03</div><div class="roadmap-content glass-card">
+            <div class="roadmap-head"><span class="roadmap-step">03 / CURRENT FOCUS</span><span class="state state-current">In progress</span></div>
+            <h3>Web Development Fundamentals</h3><p>Practise HTML, CSS, JavaScript, responsive layouts, and interactive website features.</p>
+          </div>
+        </article>
+        <article class="roadmap-item upcoming">
+          <div class="roadmap-marker">04</div><div class="roadmap-content glass-card">
+            <div class="roadmap-head"><span class="roadmap-step">04 / UPCOMING</span><span class="state state-next">Planned</span></div>
+            <h3>Frontend Development</h3><p>Strengthen JavaScript and explore a frontend library or framework such as React.</p>
+          </div>
+        </article>
+        <article class="roadmap-item upcoming">
+          <div class="roadmap-marker">05</div><div class="roadmap-content glass-card">
+            <div class="roadmap-head"><span class="roadmap-step">05 / UPCOMING</span><span class="state state-next">Planned</span></div>
+            <h3>Backend & Database Basics</h3><p>Explore backend development with Python, APIs, and database fundamentals such as SQL.</p>
+          </div>
+        </article>
+        <article class="roadmap-item upcoming">
+          <div class="roadmap-marker">06</div><div class="roadmap-content glass-card">
+            <div class="roadmap-head"><span class="roadmap-step">06 / FUTURE GOAL</span><span class="state state-next">Future goal</span></div>
+            <h3>Full-Stack Projects & Career Preparation</h3><p>Combine skills in practical projects, strengthen DSA, prepare a resume, and explore internship opportunities.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section container contact-section" id="contact">
+      <div class="contact-card glass-card">
+        <p class="eyebrow">LET'S CONNECT</p>
+        <h2>Have an idea or opportunity?</h2>
+        <p>I’m always interested in learning, collaborating, and connecting with people in technology.</p>
+        <a class="button button-primary" href="https://github.com/srijanipal07-wq" target="_blank" rel="noopener noreferrer">Visit my GitHub <span>↗</span></a>
+        <p class="contact-footnote">You can add your email and other social links here whenever you are ready.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner"><a href="#home" class="logo">Srijani<span>.</span></a><p>Designed & built by Srijani Pal · 2026</p><a href="#home" class="back-top">Back to top ↑</a></div>
   </footer>
 </body>
 </html>
